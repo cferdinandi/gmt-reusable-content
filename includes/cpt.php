@@ -36,6 +36,7 @@
 				// 'page-attributes',
 			),
 			'has_archive'   => false,
+			'exclude_from_search' => true,
 			'publicly_queryable' => false,
 			'query_var' => false,
 			'rewrite' => array(
