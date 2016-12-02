@@ -24,6 +24,7 @@
 			'labels'        => $labels,
 			'description'   => 'Holds our snippets and snippet-specific data',
 			// 'public'        => true,
+			'show_ui'       => true,
 			// 'menu_position' => 5,
 			'menu_icon'     => 'dashicons-editor-paste-text',
 			'hierarchical'  => false,
