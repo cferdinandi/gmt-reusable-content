@@ -36,6 +36,7 @@
 				// 'page-attributes',
 			),
 			'has_archive'   => false,
+			'publicly_queryable' => false,
 			'query_var' => false,
 			'rewrite' => array(
 				'slug' => 'snippets',
