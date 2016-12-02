@@ -5,7 +5,7 @@
  * Plugin URI: https://github.com/cferdinandi/gmt-reusable-content/
  * GitHub Plugin URI: https://github.com/cferdinandi/gmt-reusable-content/
  * Description: Create content snippets you can reuse with shortcodes.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Chris Ferdinandi
  * Author URI: http://gomakethings.com
  * Text Domain: gmt_reusable_content
