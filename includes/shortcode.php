@@ -1,18 +1,5 @@
 <?php
 
-/**
- * Plugin Name: GMT Reusable Content
- * Plugin URI: https://github.com/cferdinandi/gmt-reusable-content/
- * GitHub Plugin URI: https://github.com/cferdinandi/gmt-reusable-content/
- * Description: Create content snippets you can reuse with shortcodes.
- * Version: 1.0.0
- * Author: Chris Ferdinandi
- * Author URI: http://gomakethings.com
- * Text Domain: gmt_reusable_content
- * License: GPLv3
- */
-
-
 	/**
 	 * Adds the content snippet shortcode
 	 * @param  array $atts The shortcode args
@@ -33,7 +20,7 @@
 		if ( empty( $get_snippet ) ) return;
 
 		// Return the snippet content
-		return wpautop( $get_snippet->post_content, false );
+		return do_shortcode( wpautop( $get_snippet->post_content, false ) );
 
 	}
 	add_shortcode( 'snippet', 'gmt_reusable_content_shortcode' );
