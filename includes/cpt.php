@@ -35,6 +35,7 @@
 				// 'excerpt',
 				'revisions',
 				// 'page-attributes',
+				'wpcom-markdown',
 			),
 			'has_archive'   => false,
 			'exclude_from_search' => true,
