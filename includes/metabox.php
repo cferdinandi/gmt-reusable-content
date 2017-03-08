@@ -22,7 +22,7 @@
 
 			<fieldset>
 
-				<input type="text" class="large-text" readonly value="[snippet id=&quot;<?php echo $post->ID ?>&quot;]">
+				<input type="text" class="large-text" readonly value="[snippet id=&quot;<?php echo $post->ID ?>&quot; title=&quot;<?php echo $post->post_title; ?>&quot;]">
 				<label for="snippet-shortcode"><?php _e( 'The shortcode for this snippet', 'gmt_reusable_content' ) ?></label>
 
 			</fieldset>
