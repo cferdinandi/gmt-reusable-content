@@ -10,6 +10,7 @@
 		// Get shortcode atts
 		$snippet = shortcode_atts( array(
 			'id' => null,
+			'autop' => 'true',
 		), $atts );
 
 		// Make sure snippet ID is provided
@@ -20,7 +21,7 @@
 		if ( empty( $get_snippet ) ) return;
 
 		// Return the snippet content
-		return do_shortcode( wpautop( $get_snippet->post_content, false ) );
+		return do_shortcode( ( $snippet['autop'] === 'false' ? $get_snippet->post_content : wpautop( $get_snippet->post_content, false ) ) );
 
 	}
 	add_shortcode( 'snippet', 'gmt_reusable_content_shortcode' );
